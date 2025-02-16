@@ -85,15 +85,15 @@ export function useBearAnimation({
         // First time entering password field
         animateImages(hideBearImages, 40, false, () => {
           if (showPassword) {
-            animateImages(peakBearImages, 100);
+            animateImages(peakBearImages, 50);
           }
         });
       } else if (showPassword && prevShowPassword.current === false) {
         // Show password selected
-        animateImages(peakBearImages, 100);
+        animateImages(peakBearImages, 50);
       } else if (!showPassword && prevShowPassword.current === true) {
         // Hide password selected
-        animateImages(peakBearImages, 100, true);
+        animateImages(peakBearImages, 50, true);
       }
     }
 
