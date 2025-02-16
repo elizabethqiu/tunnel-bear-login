@@ -9,11 +9,12 @@ const BearAvatar = memo(function BearAvatar({ currentImage, size = 130 }: BearAv
   return (
     <img 
       src={currentImage} 
-      className="rounded-full absolute top-0 left-0 transition-opacity duration-100"
+      className="rounded-full transition-all duration-200 ease-in-out"
+      width={size}
+      height={size}
       style={{ 
-        width: size,
-        height: size,
-        objectFit: 'contain'
+        objectFit: 'contain',
+        transform: 'translate3d(0,0,0)' // Force GPU acceleration
       }}
       tabIndex={-1}
       alt="Animated bear avatar"
