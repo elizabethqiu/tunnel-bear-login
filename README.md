@@ -1,3 +1,6 @@
+src: https://github.com/elizabethqiu/tunnel-bear-login
+site: https://bear.addy.ie/
+
 # Tunnel Bear Login Animation
 
 A delightful login form implementation inspired by [The Tunnel Bear](https://www.tunnelbear.com/account/login) by Kadri Jibraan. This project recreates the charming bear animation that responds to user input and focus states.
